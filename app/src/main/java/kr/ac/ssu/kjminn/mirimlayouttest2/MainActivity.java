@@ -42,9 +42,11 @@ public class MainActivity extends AppCompatActivity {
 
         edit1 = new EditText(this);
         text1 = new TextView(this);
-/*        LinearLayout.LayoutParams textParams = (LinearLayout.LayoutParams)text1.getLayoutParams();
-        textParams.topMargin = 20;
-        text1.setLayoutParams(textParams);*/
+        LinearLayout.LayoutParams textParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                                                        ViewGroup.LayoutParams.MATCH_PARENT);
+        textParams.topMargin = 100;
+        text1.setLayoutParams(textParams);
+
 
         Button btn = new Button(this);
         btn.setText("버튼입니다.");
