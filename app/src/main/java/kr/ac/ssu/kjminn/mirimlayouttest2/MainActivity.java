@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+                Toast.makeText(getApplicationContext(), "Java 코드로 작성한 버튼 입니다.", Toast.LENGTH_SHORT).show();
             }
         });
 
